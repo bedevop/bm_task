@@ -10,3 +10,7 @@ export default class App extends Application {
 }
 
 loadInitializers(App, config.modulePrefix);
+
+App = Ember.Application.create({
+  LOG_TRANSITIONS: true
+});
